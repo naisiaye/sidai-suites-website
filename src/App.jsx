@@ -62,7 +62,10 @@ function App() {
 
           <div className="suiteCards">
             <div className="suiteCard">
-              <img src="/images/suite-1.png" alt="Private salon suite" />
+              <img
+                src="/images/suite-1.png"
+                alt="Private luxury salon suite at Sidai Suites"
+              />
 
               <div className="suiteCardContent">
                 <span>01</span>
@@ -75,7 +78,10 @@ function App() {
             </div>
 
             <div className="suiteCard">
-              <img src="/images/suite-2.png" alt="Luxury salon suite" />
+              <img
+                src="/images/suite-2.png"
+                alt="Modern luxury salon suite interior at Sidai Suites"
+              />
 
               <div className="suiteCardContent">
                 <span>02</span>
@@ -90,7 +96,7 @@ function App() {
             <div className="suiteCard">
               <img
                 src="/images/suite-3.png"
-                alt="Beauty entrepreneur salon suite"
+                alt="Luxury salon suite designed for beauty professionals"
               />
 
               <div className="suiteCardContent">
@@ -128,7 +134,10 @@ function App() {
           </div>
 
           <div className="aboutImage">
-            <img src="/images/about-lounge.png" alt="Sidai Suites lounge" />
+            <img
+              src="/images/about-lounge.png"
+              alt="Warm modern lounge area inside Sidai Suites"
+            />
           </div>
         </div>
       </section>
@@ -150,7 +159,7 @@ function App() {
           <div
             className="mood large"
             style={{
-              backgroundImage: "url('/images/mood-1.png')",
+              backgroundImage: "url('/images/luxury-salon-suite-design.png')",
             }}
           >
             <span>Luxury</span>
@@ -159,7 +168,7 @@ function App() {
           <div
             className="mood"
             style={{
-              backgroundImage: "url('/images/mood-2.png')",
+              backgroundImage: "url('/images/warm-neutral-salon-interior.png')",
             }}
           >
             <span>Warm</span>
@@ -168,7 +177,7 @@ function App() {
           <div
             className="mood dark"
             style={{
-              backgroundImage: "url('/images/mood-3.png')",
+              backgroundImage: "url('/images/modern-salon-suite-hallway.png')",
             }}
           >
             <span>Private</span>
@@ -177,7 +186,7 @@ function App() {
           <div
             className="mood"
             style={{
-              backgroundImage: "url('/images/mood-4.png')",
+              backgroundImage: "url('/images/private-beauty-suite.png')",
             }}
           >
             <span>Modern</span>
@@ -250,7 +259,10 @@ function App() {
       {/* CONTACT */}
       <section id="contact" className="contactSection">
         <div className="contactImage">
-          <img src="/images/contact-lounge.png" alt="Sidai Suites interior" />
+          <img
+            src="/images/contact-lounge.png"
+            alt="Luxury salon suites interior at Sidai Suite"
+          />
         </div>
 
         <div className="contactContent">
