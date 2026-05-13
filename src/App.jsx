@@ -201,8 +201,28 @@ function App() {
             name="sidai-waitlist"
             method="POST"
             data-netlify="true"
-            action="/"
             className="waitlistForm"
+            onSubmit={(e) => {
+              e.preventDefault();
+
+              const form = e.target;
+              const formData = new FormData(form);
+
+              fetch("/", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: new URLSearchParams(formData).toString(),
+              })
+                .then(() => {
+                  alert("Thank you for joining the Sidai Suites waitlist!");
+                  form.reset();
+                })
+                .catch(() => {
+                  alert("Something went wrong. Please try again.");
+                });
+            }}
           >
             <input type="hidden" name="form-name" value="sidai-waitlist" />
 
