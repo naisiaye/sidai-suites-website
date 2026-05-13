@@ -201,6 +201,7 @@ function App() {
             name="sidai-waitlist"
             method="POST"
             data-netlify="true"
+            action="/"
             className="waitlistForm"
           >
             <input type="hidden" name="form-name" value="sidai-waitlist" />
