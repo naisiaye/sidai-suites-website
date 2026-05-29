@@ -285,6 +285,9 @@ function App() {
       <footer className="footer">
         <p>SIDAI SUITES</p>
         <span>Luxury salon suites coming soon.</span>
+        <p className="footer-copyright">
+          © 2026 Sidai Suites LLC. All Rights Reserved.
+        </p>
       </footer>
     </div>
   );
