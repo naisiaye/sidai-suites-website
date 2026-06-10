@@ -1,11 +1,14 @@
 import "./App.css";
+import logo from "./assets/logo.png";
 
 function App() {
   return (
     <div className="app">
       {/* NAVBAR */}
       <header className="navbar">
-        <div className="logo">SIDAI SUITES</div>
+        <div className="logo">
+          <img src={logo} alt="Sidai Suites logo" />
+        </div>
 
         <nav className="navLinks">
           <a href="#suites">Suites</a>
@@ -244,12 +247,17 @@ function App() {
               required
             />
 
-            <input
-              type="text"
-              name="profession"
-              placeholder="Profession, e.g. stylist, braider, esthetician"
-              required
-            />
+            <select name="profession" required>
+              <option value="">Select your profession</option>
+              <option value="Hairstylist">Hairstylist</option>
+              <option value="Braider">Braider</option>
+              <option value="Esthetician">Esthetician</option>
+              <option value="Lash Artist">Lash Artist</option>
+              <option value="Make up Artist">Make up Artist</option>
+              <option value="Nail Tech">Nail Tech</option>
+              <option value="Barber">Barber</option>
+              <option value="Other">Other</option>
+            </select>
 
             <button type="submit">Join the Waitlist</button>
           </form>

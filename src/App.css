@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 8%;
+  padding: 0.75rem 8%;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -46,11 +46,10 @@ body {
   backdrop-filter: blur(12px);
 }
 
-.logo {
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  color: var(--brown);
+.logo img {
+  width: auto;
+  height: 60px;
+  display: block;
 }
 
 .navLinks {
@@ -375,16 +374,12 @@ body {
   margin: 0 auto;
 }
 
-.waitlistForm input {
-  padding: 1rem 1.25rem;
-  border-radius: 1rem;
-  border: 1px solid rgba(77, 53, 40, 0.12);
-  background: rgba(255, 255, 255, 0.92);
-  outline: none;
-  font-size: 1rem;
-  color: var(--brown);
-  transition: all 0.3s ease;
-  backdrop-filter: blur(6px);
+.waitlistForm input,
+.waitlistForm select {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 16px;
+  border: none;
 }
 
 .waitlistForm input::placeholder {
@@ -529,6 +524,12 @@ body {
 
   .logo {
     font-size: 1rem;
+  }
+
+  .logo img {
+    height: 48px;
+    width: auto;
+    display: block;
   }
 
   .navLinks {
@@ -680,9 +681,12 @@ body {
     max-width: 100%;
   }
 
-  .waitlistForm input {
+  .waitlistForm input,
+  .waitlistForm select {
+    width: 100%;
     font-size: 0.9rem;
-    padding: 0.95rem 1rem;
+    padding: 16px;
+    border: none;
   }
 
   .waitlistForm button {
